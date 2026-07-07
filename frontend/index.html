@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="URL Shortener — Transform long links into short, shareable URLs powered by Spring Boot."
+    />
+    <title>URL Shortener | Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <!-- Navigation -->
+      <header class="navbar">
+        <div class="container navbar__inner">
+          <a href="index.html" class="navbar__brand">
+            <span class="navbar__brand-icon" aria-hidden="true">🔗</span>
+            URL Shortener
+          </a>
+
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+          </button>
+
+          <ul class="navbar__links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html" class="btn btn--secondary btn--sm">Login</a></li>
+            <li><a href="register.html" class="btn btn--primary btn--sm">Register</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <!-- Hero -->
+      <main class="hero">
+        <div class="container">
+          <article class="hero__card">
+            <div class="hero__icon" aria-hidden="true">✂️</div>
+            <h1 class="hero__title">URL Shortener</h1>
+            <p class="hero__subtitle">
+              Transform long, unwieldy links into short, secure URLs in seconds.
+              Built with Spring Boot — fast, reliable, and easy to share anywhere.
+            </p>
+
+            <div class="hero__actions">
+              <a href="login.html" class="btn btn--primary">Login</a>
+              <a href="register.html" class="btn btn--secondary">Register</a>
+            </div>
+
+            <div class="hero__features">
+              <div class="hero__feature">
+                <div class="hero__feature-icon" aria-hidden="true">⚡</div>
+                <p class="hero__feature-title">Instant Shortening</p>
+                <p class="hero__feature-text">Create short links in one click</p>
+              </div>
+              <div class="hero__feature">
+                <div class="hero__feature-icon" aria-hidden="true">🔒</div>
+                <p class="hero__feature-title">Secure Access</p>
+                <p class="hero__feature-text">JWT-protected dashboard</p>
+              </div>
+              <div class="hero__feature">
+                <div class="hero__feature-icon" aria-hidden="true">📋</div>
+                <p class="hero__feature-title">Easy Sharing</p>
+                <p class="hero__feature-text">Copy and share anywhere</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <p>
+            &copy; 2026 URL Shortener &mdash; Built with
+            <a href="#">Spring Boot</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      /* Responsive nav toggle */
+      const navToggle = document.getElementById("navToggle");
+      const navLinks = document.getElementById("navLinks");
+
+      navToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("active");
+        navToggle.setAttribute("aria-expanded", String(isOpen));
+      });
+    </script>
+  </body>
+</html>
