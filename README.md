@@ -640,21 +640,42 @@ Deployment:
 
 ---
 
-# 📸 Screenshots
+## 📸 Screenshots
 
+<table>
+<tr>
+<td align="center">
+<b>Home Page</b><br>
+<img src="screenshots/home.png" width="450">
+</td>
+<td align="center">
+<b>User Registration</b><br>
+<img src="screenshots/register.png" width="450">
+</td>
+</tr>
 
-Add screenshots:
+<tr>
+<td align="center">
+<b>Registration Successful</b><br>
+<img src="screenshots/user-registered.png" width="450">
+</td>
+<td align="center">
+<b>User Login</b><br>
+<img src="screenshots/user-login.png" width="450">
+</td>
+</tr>
 
-1. Registration Page
-2. Login Page
-3. JWT Token Response
-4. URL Shortening API
-5. URL Redirect
-6. MySQL Database
-7. Docker Build
-8. Docker Container Running
-9. Application Deployment
-
+<tr>
+<td align="center">
+<b>Enter URL</b><br>
+<img src="screenshots/enter-url.png" width="450">
+</td>
+<td align="center">
+<b>Short URL Generated</b><br>
+<img src="screenshots/shorten-url.png" width="450">
+</td>
+</tr>
+</table>
 
 ---
 
